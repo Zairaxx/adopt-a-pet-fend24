@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pet Adoption</title>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  crossorigin="anonymous"/>
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Adopt a Pet</h1>
+
+    <form id="pet-form">
+      <h2>Add a New Pet</h2>
+
+      <label>
+        Type of Pet:
+        <input type="text" id="pet-type" required />
+      </label>
+
+      <label>
+        Name:
+        <input type="text" id="pet-name" required />
+      </label>
+
+      <label>
+        Age:
+        <input type="number" id="pet-age" required min="0" />
+      </label>
+
+      <label>
+        Rescue Date:
+        <input type="date" id="pet-rescue-date" required />
+      </label>
+
+      <label>
+        Breed:
+        <input type="text" id="pet-breed" required />
+      </label>
+
+      <label>
+        Color:
+        <input type="text" id="pet-color" required />
+      </label>
+
+      <button type="submit"><i class="fas fa-plus"></i> Add Pet</button>
+    </form>
+
+    <hr />
+
+    <h2>Available Pets</h2>
+    <div id="pet-list"></div>
+  </div>
+
+  <!-- Modal -->
+  <div id="edit-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal()">&times;</span>
+      <h2>Edit Pet</h2>
+      <form id="edit-pet-form">
+        <label>Type of Pet: <input type="text" id="edit-type" /></label>
+        <label>Name: <input type="text" id="edit-name" /></label>
+        <label>Age: <input type="number" id="edit-age" /></label>
+        <label>Rescue Date: <input type="date" id="edit-rescue-date" /></label>
+        <label>Breed: <input type="text" id="edit-breed" /></label>
+        <label>Color: <input type="text" id="edit-color" /></label>
+        <button type="submit"><i class="fas fa-save"></i> Save Changes</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
