@@ -3,7 +3,7 @@ const pets = [
     {
       id: 1,
       name: 'Bella',
-      type: 'Dog', // Added type of pet
+      type: 'Dog', 
       age: 3,
       rescueDate: '2023-09-15',
       breed: 'Labrador',
@@ -12,7 +12,7 @@ const pets = [
     {
       id: 2,
       name: 'Milo',
-      type: 'Cat', // Added type of pet
+      type: 'Cat', 
       age: 2,
       rescueDate: '2024-01-10',
       breed: 'Siamese',
@@ -21,7 +21,7 @@ const pets = [
     {
       id: 3,
       name: 'Tweety',
-      type: 'Bird', // Added type of pet
+      type: 'Bird', 
       age: 1,
       rescueDate: '2024-03-22',
       breed: 'Canary',
@@ -62,7 +62,7 @@ const pets = [
   
     const newPet = {
       id: pets.length + 1,
-      type, // Add type of pet
+      type,
       name,
       age,
       rescueDate,
@@ -104,10 +104,6 @@ const pets = [
     console.log(`Open modal to edit pet with id: ${id}`);
   }
   
-  // Placeholder - students will complete this
-  function deletePet(id) {
-    // Students will complete this
-  }
   
   // Modal close logic
   function closeModal() {
